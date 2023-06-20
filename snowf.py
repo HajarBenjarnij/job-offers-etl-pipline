@@ -2,8 +2,8 @@ import snowflake.connector
 import os
 
 conn = snowflake.connector.connect(
-    user="hajarbenjarnij",
-    password="Snowflake@hajar123",
+    user="",
+    password="",
     account="oq54799.eu-west-3.aws",
     warehouse="COMPUTE_WH",
     database="AWS_DATABASE",
@@ -28,7 +28,7 @@ CREATE OR REPLACE STORAGE INTEGRATION s3_int
   TYPE = EXTERNAL_STAGE
   STORAGE_PROVIDER = 'S3'
   ENABLED = TRUE
-  STORAGE_AWS_ROLE_ARN='arn:aws:iam::360002118275:role/mys3role'
+  STORAGE_AWS_ROLE_ARN=''
   STORAGE_ALLOWED_LOCATIONS = ('s3://hajarbucketaws/data/')
 """
 
