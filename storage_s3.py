@@ -6,8 +6,8 @@ from botocore.exceptions import ClientError
 from botocore.exceptions import NoCredentialsError
 
 session = boto3.Session(
-    aws_access_key_id="AKIAVHUOMMKBZXHORDVB",
-    aws_secret_access_key="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"
+    aws_access_key_id="",
+    aws_secret_access_key=""
     )
 
 open_data_bucket = 'hajarbucketaws'
